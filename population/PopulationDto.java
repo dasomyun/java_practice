@@ -133,14 +133,15 @@ public class PopulationDto {
 	}
 	
 	@Override
-	public String toString() {
-		return "PopulationDto [dong=" + dong + ", ho=" + ho + ", menChild=" + menChild + ", womenChild=" + womenChild
-				+ ", menTeen=" + menTeen + ", womenTeen=" + womenTeen + ", menAdult=" + menAdult + ", womenAdult="
-				+ womenAdult + ", menMid=" + menMid + ", womenMid=" + womenMid + ", menMidOld=" + menMidOld
-				+ ", womenMidOld=" + womenMidOld + ", menOld=" + menOld + ", womenOld=" + womenOld + ", menTotal="
-				+ menTotal + ", womenTotal=" + womenTotal + ", total=" + total + ", average=" + average + "]";
+	public String toString(){
+		return dong + "동" + ho + "호" + "는 " + total + "名 이 거주하고 있습니다."
+				+ "\n0대 남자는 " + menChild + "名, 여자는 " + womenChild + "名"
+				+ "\n10대 남자는 " + menTeen + "名, 여자는 " + womenTeen + "名"
+				+ "\n20-30대 남자는 " + menAdult + "名, 여자는 " + womenAdult + "名"
+				+ "\n40-50대 남자는 " + menMid + "名, 여자는 " + womenMid + "名"
+				+ "\n60-70대 남자는 " + menMidOld + "名, 여자는 " + womenMidOld + "名"
+				+ "\n80대이상 남자는 " + menOld + "名,  여자는 " + womenOld + "名"
+				+ " 입니다.";
 	}
-	 
-	 
 	
 }
