@@ -1,0 +1,6 @@
+cat
+고양이
+dog
+개
+rabbit
+토끼
