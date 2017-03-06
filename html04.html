@@ -1,0 +1,82 @@
+<!-- <a>태그와 <img>태그만 html의 기능적 속성이 살아있다 -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>목록과 문단 예제입니다</title>
+	</head>
+	<body>
+		<p>p태그는 문단(Paragraph)을 정의하는 태그입니다.</p>
+		<p align="center">p태그는 문단(Paragraph)을 정의하는 태그입니다.</p>
+		
+		<pre>
+			p r e 태그입니다.
+			사용자가              작성한  내   용   을   그대로 
+			출력합니        다.
+		</pre>
+		<br/><br/>
+		
+		<h3>메뉴리스트</h3>
+		<!-- 순서가 있는 목록 -->
+		<ol>
+			<li>메뉴1</li>
+			<li>메뉴2</li>
+			<li>메뉴3</li>
+		</ol>
+		<br/><br/>
+		<ol start="20">		<!-- 태그 - 클래스, 속성 - setter method 나중에 Dom할때 다 getter로 뽑아올 수 있음-->
+			<li>메뉴1</li>
+			<li>메뉴2</li>
+			<li>메뉴3</li>
+		</ol>
+		<br/><br/>
+		
+		<!-- 순서가 없는 목록 -->
+		<ul>
+			<li>서울</li>
+			<li>경기</li>
+			<li>충청</li>
+			<li>전라</li>
+			<li>경상</li>
+			<li>강원</li>
+		</ul>
+		
+		<!-- 대분류, 소분류 -->
+		<dl>
+			<dt>메뉴리스트</dt>
+			<dd>Menu1<dd>
+			<dd>Menu2</dd>
+			<dd>Menu3</dd>
+			<dt>지역리스트</dt>
+			<dd>서울</dd>
+			<dd>경기</dd>
+			<dd>충청</dd>
+			<dd>전라</dd>
+			<dd>강원</dd>
+		</dl>
+		<br/><br/><br/>
+		<!-- 
+			target="_self" : 새문서(디폴트)  
+				   "_blank" : 새창
+		-->
+		<ol>
+			<li><a href="http://localhost:8081/webTesting/01_HTML/html01.html">내문서로 이동</a></li> <!--기본: 새문서로 바뀜 , href="URL" URL:ip/port/파일경로 즉 전체경로 -->
+			<li><a href="http://www.naver.com" target="_blank">네이버로 이동</a></li> <!-- 새문서로 바뀜 -->		
+			<li><a href="http://www.google.co.kr" target="_blank">구글 이동</a></li> <!-- 새로운 창으로 이동 -->	
+		</ol>
+		<br/><br/><br/>
+		<!-- DIV, SPAN 가장 많이 사용 : 기능이 없다. 기능적 역할을 하는 태그들은 CSS를 사용한다 만약 <b>태그를 CSS에 쓰려면 b태그의 기능을 죽이고 사용해야 한다-->
+		<div align="center">가장 많이 사용하는 태그</div>
+		<div>데이터 구분자 역할만 합니다.</div>
+		<div>CSS에서 사용하기 편하다.</div>
+		<div>자동 줄바꿈됩니다.</div>
+		<br/><br/>
+		
+		<span>가장 많이 사용하는 태그</span>
+		<span>데이터 구분자 역할만 합니다.</span>
+		<span>CSS에서 사용하기 편하다.</span>
+		<span>자동 줄바꿈이 안됩니다.</span>
+			
+	</body>
+</html>
