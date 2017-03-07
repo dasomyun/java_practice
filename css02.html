@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>태그 선택자</title>
+<style type="text/css">
+/* 크롬-오른쪽 마우스-검사 해서 많이 보기 */
+	* {
+		font-size:18px;
+	}
+	
+	li, p, h1 {
+		color:#0054FF;
+	}
+	
+	h1 , p {
+		font-weight:bold;
+		
+	}
+	p {
+		font-family :굴림;
+	}
+	/* a태그는 4가지고 나누어져있음 */
+	a {
+		text-decoration:none;
+		font-size:50px;
+	}
+	
+	a:link{			/* 아직 방문하지 않은 경우 */
+		color:red;
+	}				
+	a:hover{		/* 마우스를 링크 위에 올려 놓았을 때 */
+		color:yellow;
+	}		
+	a:visited{		/* 한번 이상 방문한 링크처리 */
+		color:black;
+	}
+	a:active{		/* 마우스를 클릭한 순간 (최근에는 사용 안함) */
+	
+	}
+
+</style>
+</head>
+<body>
+	<header>
+		<h1>SIST 주식회사</h1>
+	</header>
+	
+	<nav>
+		<ul>
+			<li>회사소개</li>
+			<li>제품소개</li>
+			<li>고객센타</li>
+			<li>공지사항</li>
+		</ul>
+	</nav>
+	
+	<section>
+		<p>우리회사는 50년 전통의 역사와 뛰어난 기술을 바탕으로 좋은 회사입니다.</p>
+	</section>
+	
+	<footer>
+		<p>서울시 강남구 역삼1동 한독빌딩 8층</p>
+		<a href="">회사소개</a>
+		<a href="http://www.naver.com">네이버</a>
+		<a href="http://www.daum.net">다음</a>
+		<a href="http://www.google.com">구글</a>
+	</footer>
+	
+</body>
+</html>
