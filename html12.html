@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>폼 첫번째 예제입니다.</title>
+</head>
+<body>
+<!-- name : 식별자 value : 값 -->
+	<h3>INPUT TAG</h3>	
+	<table>
+		<tr>
+			<td>TEXT TYPE</td>
+			<td>
+				<input type="text" name="id" value="123" /> <!-- 싱글태그 : <br/>, <hr/>, <input/>, <img/> -->
+			</td>
+		</tr>
+		
+		<tr>
+			<td>PASSWORD TYPE</td>
+			<td>
+				<input type="password" name="pwd" maxlength="15" />	
+			</td>	
+		</tr>
+		
+		<tr>
+			<td>HIDDEN TYPE</td> <!-- 클라이언트에게 뿌려주면 안되는 정보 보낼때 사용 (value값을 써줘야 함), value 값으로 받음 -->
+			<td>
+				<input type="hidden" name="num" value="123" />
+			</td>
+		</tr>
+		
+		<tr>
+			<td>RADIO TYPE</td>
+			<td>
+				<input type="radio" name="gender" value="man"/> 남자
+				<input type="radio" name="gender" value="woman" checked=checked/> 여자 <!-- 실제로 넘어가는 값 : value -->
+			</td>
+		</tr>
+	
+		<tr>
+			<td>CHECK BOX</td>
+			<td> 
+				<input type="checkbox" name="subject" value="java" checked = checked /> JAVA
+				<input type="checkbox" name="subject" value="jsp" /> JSP
+				<input type="checkbox" name="subject" value="iphone" /> IPHONE <!-- 체크된 value의 배열값으로 넘어온다 -->
+			</td>
+		</tr>
+		<tr>
+			<td>FILE TYPE</td>
+			<td>
+				<input type="file" name="file"/>
+			</td>
+		</tr>
+	
+		<tr>
+			<td>BUTTON TYPE</td>
+			<td>
+				<input type="button" value="누르세요" />
+				<input type="submit" value="전송합니다" />
+				<input type="reset" value="취소합니다"/>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>HTML5 TYPE COLOR</td>
+			<td>
+				<input type="color" name="abc"/>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>HTML5 TYPE DATETYPE-LOCAL</td>
+			<td>
+				<input type="date" name="xyz"/> ~
+				<input type="date" name="ijk"/>
+			</td>
+		</tr>
+	</table>
+	<br/><br/>
+	
+	<h3>그외의 태그들</h3>
+	<table>
+		<tr>
+			<td>SELECT</td>
+			<td>
+				<select name="fruit">
+					<option value="apple">사과</option>
+					<option value="banana">바나나</option>
+					<option value="pineapple">파인애플</option>
+				</select>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>SELECT</td>
+			<td>
+				<select name="fruit2" size="4" multiple="multiple">
+					<option value="apple">사과</option>
+					<option value="banana">버네나</option>
+					<option value="pineapple">파인애플</option>
+					<option value="melon">메론</option>
+				</select>
+			</td>
+		</tr>
+		
+		<tr>
+			<td>TEXTAREA</td>
+			<td>
+				<textarea rows="10" cols="50" name="contents"></textarea>
+			</td>
+		</tr>		
+	</table>	
+</body>
+</html>
