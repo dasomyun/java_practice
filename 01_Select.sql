@@ -50,7 +50,7 @@ FROM employees;
 SELECT employee_id, salary*12+nvl(commission_pct,0) as 연봉 
 FROM employees;
 
-SELECT employee_id AS "SawonNumber"  -- 특수문자, 공백, 대문자로 나오게 하고싶으면 "'로 감싸기
+SELECT employee_id AS "SawonNumber"  -- 특수문자, 공백, 대문자로 나오게 하고싶으면 ""로 감싸기
 FROM employees;
 
 SELECT employee_id "***bunho***" -- as는 생략 가능 
