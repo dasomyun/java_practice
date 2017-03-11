@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자식, 자손 선택자</title>
+<style type="text/css">
+	#header {
+		border : 1px solid #cccccc;
+		width : 500px;
+	}
+	/* 
+		자손:자식, 후손:자식을 포함한 모든 후손 
+		자손 : 상위>하위
+		후손 : 상위 하위 
+	*/
+	
+	.wrap li{ 		/*후손*/
+		background-color : red;
+		list_style-type : none;
+	}
+	
+	.wrap li > p {
+		font-size : 30px;
+		color : yellow;
+	}
+	/*
+	#header > h1 , .wrap h1 , .logo > h1 {
+		font-weight : bold;
+		color : pink;
+	}
+	*/
+	#header h1 {
+		font-weight : bold;
+		color : pink;
+	}
+	
+</style>
+</head>
+<body>
+	<div id="header">
+		<h1>1번</h1>
+		<div class="logo">		
+			<h1>LOGO</h1>
+		</div>
+			
+		<div class="copy">
+			<h2>global company</h2>
+		</div>
+		
+		<div class="wrap">				 <!-- class, id 를 조금쓰는게 좋다 (항상 기준점 생각하기) -->
+		<p>서울시 8대 신성장동력의 하나인</p>
+		<ul>
+			<li>
+				<p>서울 에니메이션 센터</p>
+				<h1>서울 녹색 산업 지원</h1>	
+			</li>
+			<li>
+				<p>서울 게임 콘텐츠 센터</p>
+				<h1>캐릭터 포털사이트</h1>
+			</li>
+		</ul>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+.form_style {
+	border : dotted 2px red;
+	width : 410px;
+	height : 175px;
+}
+
+.title {
+	border : solid 1px blue;
+	width : 400px;
+	height : 36px;
+	text-align : center;
+	padding : 2px 0px;
+	border-bottom-width : 0px;
+}
+
+.content {
+	border : solid 1px yellow;
+	width : 400px;
+	height : 86px;
+	text-align : left;
+	margin : 2px 0px;
+	border-bottom-width : 0px;
+	
+}

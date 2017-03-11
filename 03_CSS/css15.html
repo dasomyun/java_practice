@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>동위선택자</title>
+<style type="text/css">
+/* 동위 선택자 : ~ 동등한 모든 태그(기준태그), + 동등한 태그(바로 아래태그) */
+	h3~div {
+		font-size : 12px;
+		color : orange;
+	}
+	
+	h3+div {
+		font-size : 50px;
+		font-weight : bold;
+		color : blue;
+	}
+
+</style>
+</head>
+<body>
+	<div>APPLE</div>
+	
+	<h3>동위 선택자</h3>
+	
+	<div>ONE</div>
+	<div>TWO</div>
+	<div>THREE</div>
+	<div>FOUR</div>
+	<div>FIVE</div>
+</body>
+</html>

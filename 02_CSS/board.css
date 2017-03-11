@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+
+.form_style {
+	border : solid 1px black;
+	width : 600px;
+	height : 410px;  /*410*/
+	margin : 0px auto;
+}
+
+.one {
+	border : solid 1px black;
+	width : 100px;
+	line-height : 30px;
+	text-align : center;	
+	float : left;
+}
+
+.two {
+	border : solid 1px black;
+	width : 600px;
+	line-height : 30px;
+}
+
+.bottom {
+	border : soild 1px black;
+	width : 600px;
+	height : 100px;
+	text-align : center;
+}
+
+input {
+	margin-left : 5px;
+}
