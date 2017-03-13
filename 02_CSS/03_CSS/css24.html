@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>visibility , display</title>
+<style type="text/css">
+		
+	#display_none div, #visibility_none div {
+		width : 100px;
+		height : 100px;
+	}
+	
+	#display_none > div:nth-child(1) {
+		background-color : #ff0000;
+		color : #ffffff;
+		font-weight : bold;
+		text-align : center;
+	}
+	
+	#display_none > div:nth-child(2) {
+		background-color : #00ff00;
+		color : #ffffff;
+		font-weight : bold;
+		text-align : center;
+		visibility : hidden; 		/* 자리는 차지하지만 안보인다 */
+	}
+	
+	#display_none > div:nth-child(3) {
+		background-color : #0000ff;
+		color : #ffffff;
+		font-weight : bold;
+		text-align : center;
+	}
+	
+	#visibility_none > div:nth-child(1) {
+		margin-top : 50px;
+		background-color : #ff0000;
+		color : #ffffff;
+		font-weight : bold;
+		text-align : center;
+	}
+	
+	#visibility_none > div:nth-child(2) {
+		background-color : #00ff00;
+		color : #ffffff;
+		font-weight : bold;
+		text-align : center;
+		display : none;			/* 공간도 사라짐 */
+	}
+	
+	#visibility_none > div:nth-child(3) {
+		background-color : #0000ff;
+		color : #ffffff;
+		font-weight : bold;
+		text-align : center;
+	}
+	
+</style>
+</head>
+<body>
+	<div id="display_none">
+		<div>content1</div>
+		<div>content2</div>
+		<div>contetn3</div>
+	</div>
+	
+	<div id="visibility_none">
+		<div>content1</div>
+		<div>content2</div>
+		<div>contetn3</div>
+	</div>
+</body>
+</html>

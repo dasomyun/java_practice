@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS 방명록 예제입니다.</title>
+<link rel="stylesheet" type="text/css" href="css12_mystyle.css">
+</head>
+<body>
+	<div align="center" style="margin: 0px auto;">
+		<form class="form_style" action="서버주소" method="get"> <!-- method=전달방식 (main메소드처럼 여기서부터 스타트)-->
+			<div class="title">
+				<!-- 첫번째 행 -->
+				<label>이름</label>
+				<input type="text" name="irum" size="12"/>
+				<label style="margin-left:20px;">비밀번호</label>
+				<input type="password" name="pwd" size="12"/>
+			</div>
+			<div class="content">
+				<!-- 두번째 행 -->
+				<textarea rows="5" cols="53" name="msg"></textarea>
+			</div>
+			<div class="title" style="text-align:right">
+				<!-- 세번째 행 -->
+				<input type="submit" value="확인"/>
+				<input type="reset" value="취소"/>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

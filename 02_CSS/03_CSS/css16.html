@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>선택자 예제 입니다.</title>
+<style type="text/css">
+
+	li {
+		list-style : none;
+		margin-left : 20px;
+	}
+	
+	#sub > li {
+		font-size : 2em;
+		font-weight : bold;
+		color : orange;
+	}
+
+	#sub > li:hover {			/* 필터 선택자(반응선택자) : 마우스 반응에 따른 속성 설정 */
+		color : #FFE400;
+	}
+	
+</style>
+</head>
+<body>
+	<div>
+		<ul id="sub">
+			<li>사과</li>
+			<li>버네너</li>
+			<li>딸기</li>
+			<li>포도</li>
+			<li>오렌지</li>
+		</ul>
+		
+		<ul>
+			<li>현대자동차</li>
+			<li>기아자동차</li>
+			<li>대우자동차</li>
+			<li>삼성자동차</li>
+			<li>쌍용자동차</li>
+		</ul>
+	</div>
+</body>
+</html>

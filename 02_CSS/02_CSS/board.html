@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>게시판 예제 입니다.</title>
+<link rel="stylesheet" type="text/css" href="board.css">
+</head>
+<body>
+	<div>
+		<div class="title">
+			<p style="text-align : center; font-weight : bold;">글쓰기</p>
+			<a href="#" style="align : right;" >글목록</a>
+		</div>
+		
+		<form class="form_style" >
+			<div class="rcontent">
+				<label>작성자</label>
+			</div>
+			<div class="lcontent">
+				<input type="text" size="30" name="name"/>
+			</div>
+			
+			<div class="rcontent">
+				<label>제목</label>
+			</div>
+			<div class="lcontent">
+				<input type="text" size="50" name="title"/>
+			</div>
+			
+			<div class="rcontent">
+				<label>이메일</label>
+			</div>
+			<div class="lcontent">
+				<input type=email size="50" name="email"/>
+			</div>
+			
+			<div class="rcontent" style="height:250px;">
+				<label>내용</label>
+			</div>
+			<div class="lcontent" style="height:250px;">
+				<textarea rows="16" cols="67"></textarea>
+			</div>
+			
+			<div class="rcontent">
+				<label>비밀번호</label>
+			</div>
+			<div class="lcontent">
+				<input type="password" size="30" name="pwd"/>
+			</div>
+			
+			<div class="bottom"> 
+				<input type="submit" value="글쓰기" />
+				<input type="reset" value="다시작성" />
+				<input type="button" value="목록보기" />
+			</div>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS 글꼴 단위</title>
+<style type="text/css">
+
+	#content1, #content2 {
+		width : 580px;
+		margin : 0px auto;
+		border : 2px solid #CCCCCC;
+		color : #333333;
+		font-weight : bold;
+		padding : 20px;
+	}
+	
+	#content1 > p:nth-child(2n), #content2 > p:nth-child(2n){
+		background-color : #ffffdf;
+	}
+
+	#content1 > p:nth-child(1) {
+		font-size : 16px;
+	}
+	
+	#content1 > p:nth-child(2) {
+		font-size : 120%; 	
+	}
+	
+	#content1 > p:nth-child(3) {
+		font-size : 140%;	
+	}
+	
+	#content1 > p:nth-child(4) {
+		font-size : 160%;
+	}
+	
+	#content1 span {
+		display : block;
+		color : #0872ff;
+		font-weight : normal;
+		font-size : 50%;
+	}
+	
+	#content2 > p:nth-child(1) {
+		font-size : 1.6em; /* 1이 16px */
+	}
+	
+	#content2 > p:nth-child(2) {
+		font-size : 1.4em;
+	}
+	
+	#content2 > p:nth-child(3) {
+		font-size : 1.2em;
+	}
+	
+	#content2 > p:nth-child(4) {
+		font-size : 1.0em;
+	}
+	
+	#content2 > p > span {
+		display : block;
+		color : #0872ff;
+		font-weight : normal;
+		font-size : 0.5em;
+	}
+	
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="content1">
+			<p>
+				전세계 정보기술(IT)의 중심이 하드웨어에서 소프트웨어로 이동하고 있으나 한국은 아직 하드웨어 비중이 압도적으로 높아 글로벌 트렌드를 따라가지 못하고 있다는 지적이 나왔다.
+				<span>(2017년 3월 13일 연합뉴스)</span>
+			</p>
+			<p>
+				전세계 정보기술(IT)의 중심이 하드웨어에서 소프트웨어로 이동하고 있으나 한국은 아직 하드웨어 비중이 압도적으로 높아 글로벌 트렌드를 따라가지 못하고 있다는 지적이 나왔다.
+				<span>(2017년 3월 13일 연합뉴스)</span>
+			</p>
+			<p>
+				전세계 정보기술(IT)의 중심이 하드웨어에서 소프트웨어로 이동하고 있으나 한국은 아직 하드웨어 비중이 압도적으로 높아 글로벌 트렌드를 따라가지 못하고 있다는 지적이 나왔다.
+				<span>(2017년 3월 13일 연합뉴스)</span>
+			</p>
+			<p>
+				전세계 정보기술(IT)의 중심이 하드웨어에서 소프트웨어로 이동하고 있으나 한국은 아직 하드웨어 비중이 압도적으로 높아 글로벌 트렌드를 따라가지 못하고 있다는 지적이 나왔다.
+				<span>(2017년 3월 13일 연합뉴스)</span>
+			</p>									
+		</div>
+		
+		<div id="content2">
+			<p>
+				전세계 정보기술(IT)의 중심이 하드웨어에서 소프트웨어로 이동하고 있으나 한국은 아직 하드웨어 비중이 압도적으로 높아 글로벌 트렌드를 따라가지 못하고 있다는 지적이 나왔다.
+				<span>(2017년 3월 13일 연합뉴스)</span>
+			</p>
+			<p>
+				전세계 정보기술(IT)의 중심이 하드웨어에서 소프트웨어로 이동하고 있으나 한국은 아직 하드웨어 비중이 압도적으로 높아 글로벌 트렌드를 따라가지 못하고 있다는 지적이 나왔다.
+				<span>(2017년 3월 13일 연합뉴스)</span>
+			</p>
+			<p>
+				전세계 정보기술(IT)의 중심이 하드웨어에서 소프트웨어로 이동하고 있으나 한국은 아직 하드웨어 비중이 압도적으로 높아 글로벌 트렌드를 따라가지 못하고 있다는 지적이 나왔다.
+				<span>(2017년 3월 13일 연합뉴스)</span>
+			</p>
+			<p>
+				전세계 정보기술(IT)의 중심이 하드웨어에서 소프트웨어로 이동하고 있으나 한국은 아직 하드웨어 비중이 압도적으로 높아 글로벌 트렌드를 따라가지 못하고 있다는 지적이 나왔다.
+				<span>(2017년 3월 13일 연합뉴스)</span>
+			</p>	
+		</div>	
+	</div>
+</body>
+</html>

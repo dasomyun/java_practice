@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>혼합 선택자 예제</title>
+<style type="text/css">
+
+	ul > li.menu {	/* 자식 */
+		color:#00D8FF;
+		font-weight:bold;
+		font-size:30px;
+	}
+	
+	ol  li.menu {  	/* 자손 */
+		color:#5F00FF;
+		font-weight:bold;
+		font-size:20px;
+	}
+
+</style>
+</head>
+<body>
+	<ul>
+		<li class="menu">MENU1</li>
+		<li>MENU2</li>
+		<li>MENU3</li>
+		<li class="menu">MENU4</li>
+	</ul>
+	
+	<ol>
+		<li class="menu">MENU1</li>
+		<li class="menu">MENU2</li>
+		<li>MENU3</li>
+		<li>MENU4</li>
+	</ol>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>url 단위(Background image)</title>
+<style type="text/css">
+/* 전체 : px, 부분 : % */
+	#wrap {
+		width : 800px;
+		height : 500px;
+		margin : 0px auto;
+		border : 1px solid #CCCCCC;
+	}
+	
+	#content1 {
+		width : 80%;
+		height : 100%;
+		margin : 0px auto;
+		border : 1px solid red;
+		font-size : 2em;
+		color : #ffffff;
+		font-weight : bold;
+		/*background-color : #ABF200;*/
+		background-image : url("./../images/Tulips.jpg"); /*홀따옴표도 가능 url('')*/
+		/*background-image : url("http://www.sist.co.kr/jsp/topMenu/menu/m_logo.jpg");*/
+		background-size : 50%;
+	}
+	
+	#content2 {
+		width : 500px;
+		height : 500px;
+		margin : 20px auto;
+		background-image : url('../images/Tulips.jpg');
+		background-size : 50%;
+		font-size : 2em;
+		color : #ffffff;
+		font-weight : bold;
+		text-align : center;
+		line-height : 500px;
+	}
+	
+	#content3 { 
+		width : 500px;
+		height : 500px;
+		margin : 20px auto;
+		background-image : url('../images/Tulips.jpg');
+		background-size : 50%;
+		font-size : 2em;
+		font-weight : bold;
+		text-align : center;
+		line-height : 500px;
+		background-repeat : no-repeat;
+	}
+	
+</style>
+</head>
+<body>
+	<div id="wrap"> <!-- 홀따옴표도 됨 id='wrap' -->
+		<div id="content1">해당 이미지는 저작권을 보호받습니다.</div>
+		<div id="content2">해당 이미지는 저작권을 보호받습니다.</div>	
+		<div id="content3">해당 이미지는 저작권을 보호받습니다.</div>
+	</div>
+</body>
+</html>

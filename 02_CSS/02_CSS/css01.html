@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS(Cascading Style Sheet)</title>
+<style type="text/css">
+/* TAG 선택자 */
+/* 태그 하나에 스타일을 지정하는 것은 좋지 않다 */
+/* 글꼴 가본값 (default) : 100% , 16px , 1em */
+
+	font {
+		font-size:20px;		 
+		font-family:궁서체;
+		color:red;
+	}
+	
+	span {
+		font-size:3em;
+		font-family:맑은고딕;
+		color:blue;
+	}
+	
+	p {
+		font-size:200%;
+	}
+
+	div {
+		line-height:100px; 		/* 문자열 간격 */
+	}
+	
+</style>
+
+</head>
+<body>
+<!-- 
+	CSS(Cascading Style Sheet) : HTML을 꾸며주는 역할을 한다. 
+	선택자 : 기본선택자 (TAG, ID, CLASS)
+-->
+	<font>안녕하세요</font><br/>
+	<font>반갑습니다</font><br/><br/>
+	
+	<span>여름입니다</span><br/>
+	<span>겨울입니다</span><br/><br/>
+	
+	<p>가을입니다.</p>
+	<p>봄입니다.</p>
+	
+	<div>사과</div>
+	<div>버네너</div>
+	<div>딸기</div>
+	
+</body>
+</html>

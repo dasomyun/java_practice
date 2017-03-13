@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>필터 선택자 (부정선택자)</title>
+<style type="text/css">
+	/* 필터 선택자 : 부정 선택자 */
+	#wrap {
+		width : 800px;
+		margin : 0px auto;
+	}
+	
+	#header {
+		border-bottom : 1px solid #CCCCCC;
+	}
+	
+	#footer {
+		border :2px solid #CCCCCC;
+		width : 800px;
+		height : 80px;
+	}
+	
+	#footer li {
+		list-style : none;
+		margin : 20px;
+	}
+	
+	#content li:not(.fa) {		/* .fa를 제외한 후손 (나를 제외하고)*/
+		background-color : #ffd800;
+	}
+	
+	#content a {
+		text-decoration : none;  /* a태그의 밑줄 없애주는 기능 */
+	}
+	
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<h1>CSS</h1>
+		</div>
+		
+		<div id="content">
+			<ul>
+				<li>
+					<a href="https://naver.com/" target="_blank"> 네이버 </a>
+				</li>
+				<li class="fa">
+					<a href="https://google.com/" target="_blank"> 구글 </a>
+				</li>		
+				<li>
+					<a href="https://yahoo.com/" target="_blank"> 야후 </a>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="footer">
+			<ul>
+				<li>
+					<img src="http://www.sist.co.kr/jsp/topMenu/menu/m_logo.jpg" />
+				</li>
+			</ul>
+		</div>
+		
+	</div>
+</body>
+</html>

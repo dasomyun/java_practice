@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS 메뉴 예제입니다 인라인, 블럭</title>
+<style type="text/css">
+/* inline인 경우 block으로 바꿔서 width, height를 줘야 함 */
+
+	div {			/* display : block */
+		font-size : 12px;
+		border-style : solid;
+		border-color : #000000;
+		border-width : 1px;
+		
+		width : 120px;
+		height : 30px;
+		float : left;
+		
+		border-right-width : 0px;
+		text-align : center;
+	}
+	
+	span {			/* display : inline */
+		font-size : 12px;
+		font-family : 굴림;
+		
+		border-style : solid;
+		border-color : #000000;
+		border-width : 1px;
+		
+		display : block;
+		width : 120px;
+		height : 30px;
+		float : left;  /* 옆으로 붙게 만듬 */
+		
+		border-left-width : 0px;
+		text-align : center;
+	}
+	
+	font { 			/* display : inline */
+		font-size : 12px;
+		font-family : 굴림;
+		
+		border-style : solid;
+		border-color : #000000;
+		border-width : 1px;
+		
+		display : block;
+		width : 120px;
+		height : 30px;
+		float : right;
+		
+		border-right-width : 0px;
+		text-align : center;
+	}
+	
+	a:link {
+		border-style : solid;
+		border-color : #000000;
+		border-width : 1px;
+		
+		display : block;
+		width : 120px;
+		height : 30px;
+		
+		float : left;
+		border-right-width : 0px;
+		color : red;
+		text-align : center;
+		text-decoration : none;
+		background-color : pink;
+	}
+	
+	a:hover {
+		border : solid #000000 2px;
+		font-size : 18px;
+		width : 120px;
+		height : 40px;
+		
+		color : blue;
+		background-color: yellow;
+	}
+	
+	a:visited {}
+	
+</style>
+</head>
+<body>
+	<div>뉴스</div>
+	<div>까페</div>
+	<div>블로그</div>
+	<div style="border-right-width:1px;">메일</div>
+	<br/><br/>
+	
+	<span style="border-left-width:1px;">A</span>
+	<span>B</span>
+	<span>C</span>
+	<span>D</span>
+	<br/><br/>
+	
+	<font style="border-right-width:1px;">1</font>
+	<font>2</font>
+	<font>3</font>
+	<font>4</font>
+	<br/><br/>
+	
+	<a href="http://www.naver.com">네이버</a>
+	<a href="http://www.google.com">구글</a>
+	<a href="http://www.daum.net" style="border-right-width:1px;">다음</a>
+</body>
+</html>

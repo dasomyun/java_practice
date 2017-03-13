@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>문자 선택자</title>
+<style type="text/css">
+	/* 문자 선택자 : 특정문자 또는 문자열을 선택하여 CSS속성을 설정 */
+	#wrap {
+		width : 800px;
+		margin : 0px auto;
+	}
+	
+	#header {
+		border-bottom : 2px soild #CCCCCC;
+	}
+
+	#footer li {
+		list-style : none;
+		float : left;
+	}
+	
+	#footer img {
+		margin : 20px;
+	}
+	
+	#content > p:nth-child(2):first-letter, #history:first-letter {   /* 첫글자 글자크기 크게 */
+		font-size : 2em;
+	}
+	
+	#content > p:nth-child(2):first-line, #history:first-line {
+		font-weight : bold;
+		color : #2160d1;	
+	}
+	
+	#content > p:nth-child(1)::selection {
+		background-color : olive;
+		color : red;
+	}
+	
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<div id="header">
+			<h1>설립개요</h1>
+		</div>
+		
+		<div id="content">
+			<p>
+				(서울=연합뉴스) 김태종 임순현 방현덕 기자 = 박근혜 대통령이 우리나라 헌정 사상 처음으로 파면됐다. <br/>
+				헌법재판소는 10일 오전 11시 대심판정에서 열린 박 대통령 탄핵심판 사건의 선고 재판에서 재판관 8명 전원의 일치된 의견으로 박 대통령 파면을 결정했다.<br/>
+			</p>
+			<p>
+				2017년 3월 10일 머니투데이 신문
+			</p>
+			<p id="history">				
+				2017년 10일 오전 11시 헌법재판소에서 탄핵이 이뤄졌다. 대통령 탄핵심판은 2004년 당시 노무현 대통령에 이어 두 번째이지만, 현직 대통령이 파면되는 것은 처음이다.<br/>
+				이번 결정은 선고와 동시에 효력이 발생해 직무정지 상태의 박 대통령은 임기를 다 채우지 못하고 대통령직에서 내려오게 됐다.<br/> 
+			</p>
+		</div>
+		
+		<div id="footer">
+			<ul>
+				<li>
+					<img src="http://img.naver.net/static/www/u/2013/0731/nmms_224940510.gif"/>
+				</li>
+				<li>
+					<img src="https://www.google.co.kr/images/branding/googlelogo/2x/googlelogo_color_120x44dp.png"/>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
