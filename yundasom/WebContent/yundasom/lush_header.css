@@ -1,0 +1,161 @@
+@CHARSET "UTF-8";
+
+li {
+	list-style : none;
+}
+
+a {
+	text-decoration : none;
+}
+
+* {
+	margin : 0px auto;
+}
+
+header {
+	overflow : hidden;
+	background-color : #000;
+	height : 150px;
+	width : 100%;
+}
+
+/* //////////// top ////////////// */
+
+#header_box {
+	width : 1000px;
+	border : 0px solid blue;
+}
+
+.header_top {
+	width : 700px;
+	overflow : hidden;
+	border : 0px solid red;
+	float : right; 
+	margin-bottom : 0px; 
+}
+
+.header_top li {
+	float : right;
+	margin : 4px; 
+	border-right : 1px solid #c5c5c5;
+	margin-top : 25px; 
+	padding-right : 8px;
+	line-height : 14px;
+	padding-bottom : 2px;
+}
+
+.header_top > ul {
+	margin : 0px;
+	border : 0px solid white;
+	float : right;	
+}
+
+.header_top a {
+	color : #c5c5c5;
+	font-size : 12px;
+}
+
+.header_top a:hover , .info1 a:hover {
+	text-decoration : underline;
+}
+
+.header_top li:nth-child(1) {
+	border-right-width : 0px;
+}
+
+#header_box > .logo {
+	float : left;
+	margin : 33px 0px 0px 28px;
+	border : 0px solid white;	
+}
+
+/* //////////// mid ////////////// */
+
+.header_mid {
+	border : 0px solid green;
+	width : 731px;
+	overflow : hidden;
+	float : right;
+	margin-bottom : 0px;
+}
+
+.header_mid li {
+	float : left;
+	margin-right : 20px;
+	line-height : 50px;
+} 
+
+.header_mid input[type='text'] {
+	width : 165px;
+	border : 2px solid #fff;
+	background-color : #000;
+	float : left;
+	text-align : center;
+	margin-top : 10px;
+	margin-bottom : 0px;
+	margin-left : 5px;
+	padding-bottom : 8px;
+	border-right-width : 0px;
+}
+
+.header_mid > .search img {
+	border :2px solid #fff;
+	border-left-width : 0px;
+	margin-top : 10px;	
+}
+
+.header_mid > .search {
+	margin-left : 0px; 
+}
+
+/* //////////// bot ////////////// */
+
+.header_bot { 
+	/*border : 1px solid pink;*/
+	border-top : 1px solid #474747;
+	width : 1000px;
+	height : 45px;
+	overflow : hidden;
+	margin-top : 0px;
+	line-height : 45px;		
+}
+
+.header_bot > dl { 
+	margin-left : 0px;	
+}
+
+.header_bot dd { 
+	float : left; 
+}
+
+.header_bot a {
+	border : 0px solid yellow;
+	padding : 9px 18px 9px 18px;
+	color : #fff;
+	font-size : 0.9em;
+	font-weight : bold;	
+}
+
+.best {
+	background-color : #fff;
+}
+
+.header_bot .best > span {
+	color : #000;
+}
+
+.header_bot .news {
+	margin-left : 115px;	
+}
+
+.header_bot .news span {
+	color : #898989;
+}
+
+.header_bot .news span:hover {
+	text-decoration : underline;	
+}
+
+.event_bot {
+	margin-left : 25px;
+}
