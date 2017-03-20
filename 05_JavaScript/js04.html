@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자바스크립트 이벤트 예제입니다. ( 마우스 이벤트 )</title>
+</head>
+<script type="text/javascript">
+// 이벤트 핸들러 : 이벤트가 발생해서 이벤트를 찾아가는 행위
+	function disp() {
+		document.write("<h3>하하하</h3>");
+	}
+
+	function aa() {
+		window.alert("나"); 		// window : 웹 브라우저 내장객체
+		window.alert("호");
+		window.alert("출");
+		window.alert("했");
+		window.alert("니?");
+	}
+	
+	function bb() {
+		window.alert("호출 했니?");
+	}
+	
+	function cc() {
+		var result = window.prompt("원하시는 숫자를 넣으세요", "정수형 1~10까지 수만 가능");
+		window.alert(result);
+	}
+	
+	function dd() {
+		var result = window.confirm("정말로 삭제하시겠습니까????????????????????????????");		// true, false 반환
+		if(result == true) {
+			window.alert("참");
+		} else {
+			window.alert("거짓");
+		}
+	}
+	
+	function ee(obj) { 	// obj = this = input
+		window.alert(obj.value);
+		obj.value="클릭1";
+		obj.type="text";
+	}
+	
+	function bigText(obj) { 	// obj = this = a
+		// window.alert("OK");  잘 호출되나 확인
+		obj.style.color = "blue";		// obj객체가 가지고있는 style속성의 color
+		obj.style.fontSize = "30px"; 	// CSS는 대소문자를 구분하지 않기 때문에 font-size라 쓰고 자바스크립트에서는 대소문자를 구분하기 때문에 fontSize라고 써야 함***
+		obj.style.fontFamily = "맑은 고딕";
+	}
+	
+	function normalText(obj) {
+		obj.style.color = "red";
+		obj.style.fontSize = "12px";
+		obj.style.fontFamily = "맑은 고딕";
+	}
+	
+	function shape(obj) {
+		obj.style.cursor="pointer";
+	}
+	
+</script>
+<body>
+<!-- 
+	특별한 경우가 아니면 onclick 이나 onmousedown이나 같다 
+	여기서는 a태그를 썼지만 원래 a태그를 쓸 필요가 전혀 없다 ( a태그의 기능은 이동 ) 
+	onmousedown + onmouseup = onclick
+	마우스 : 클릭(onclick), 마우스 올려놓기(onmouseover), 마우스 내려놓기(onmouseout)를 제일 많이 씀
+	alert(), confirm()을 많이 사용
+-->
+
+	<input type="button" value="확인" onclick="disp()"/>
+	<br/><br/>
+	<a href="#" style="text-decoration:none;">	
+		<span onclick="disp()">마우스 클릭하세요.</span>
+	</a>
+	<br/><br/>
+	<input type="button" value="확인2" onmousedown="aa()"/>
+	<br/><br/>
+	<input type="button" value="확인3" onmouseup="aa()"/>
+	<br/><br/>
+	<input type="button" value="확인4" ondblclick="bb()"/>	<!-- 거의 안씀 -->
+	<br/><br/>
+	<input type="button" value="확인5" onclick="cc()"/>
+	<br/><br/>
+	<input type="button" value="확인6" onclick="dd()"/>
+	<br/><br/>
+	<input type="button" value="확인7" onclick="ee(this)"/>
+	<br/><br/>
+	
+	<a href="#" style="text-decoration:none;" onmouseover="bigText(this)" onmouseout="normalText(this)">안녕하세요</a>	
+	<!-- a 태그가 가지고있는 setstyle, setonmouseover -->
+	<br/><br/>
+	<div onmouseover="shape(this)" onclick="bb()">마우스를 클릭하세요.</div>
+</body>
+</html>

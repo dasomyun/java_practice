@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Frame, window.open() 이벤트 </title>
+<script type="text/javascript">
+
+	function zipcode() {
+		window.open("http://localhost:8081/webTesting/05_JavaScript/js01.html", "myWin", "width=300px, height=200px, scrollbars=yes");	
+		// open("주소", "윈도우이름", "가로세로스크롤") 
+	}
+	
+	function myBody() {
+		window.open("http://www.naver.com", "abc", "width=300px, height=200pxm scrollbars=yes");
+	}
+	
+</script>
+</head>
+<body onload="myBody()">
+	<input type="button" value="우편검색" onclick="zipcode()"/>
+</body>
+</html>

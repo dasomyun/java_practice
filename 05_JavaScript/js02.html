@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자바스크립트 배열 예제 입니다.</title>
+
+<style type="text/css">
+	body {
+		color : green;
+	}
+</style>
+
+<script type="text/javascript">
+	/*
+		Document document = new Document();   : 내장객체라 객체생성 불필요
+		document.write(); 	: 내장객체
+	*/
+	
+	// 배열
+	var suArray = [1,2,3];
+	var strArray = ["apple", 'banana', "melon"];
+	
+	for(var i=0; i<suArray.length; i++) {
+		document.write("<span>" + suArray[i] + "</span> \t");
+	}
+	document.write("<br/>");
+	
+	for(var i=0; i<strArray.length; i++) {
+		document.write("<span>" + strArray[i] + "</span> \t");
+	}
+	document.write("<br/>");
+	
+	
+	var array = [];		// var array = new Array() , var array = Array()
+	array[0] = 25.7;
+	array[1] = 15;
+	array[2] = 'hi';
+	
+	for(var i=0; i<array.length; i++) {
+		document.write("<span>" + array[i] +"</span> ");
+	}
+	document.write("<br/><br/>");
+	
+	// 2차원 배열 : 자바스크립트는 이차원 배열이 없다. 각각의 인덱스에서 쪼갠다.
+	var menu = [3];
+	
+	menu[0] = [5];
+	menu[1] = [2];
+	menu[2] = [4];
+	
+	menu[0][0] ="A";
+	menu[0][1] ="B";
+	menu[0][2] ="C";
+	menu[0][3] ="D";
+	menu[0][4] ="E";
+	
+	menu[1][0] ="가";
+	menu[1][1] ="나";
+	
+	menu[2][0] ="1";
+	menu[2][1] ="2";
+	menu[2][2] ="3";
+	menu[2][3] ="4";
+	
+	for(var i=0; i<menu.length; i++) {
+		for(var j=0; j<menu[i].length; j++){
+			document.write("<span>" + menu[i][j] + "</span>\t");
+		}
+		document.write("<br/>");
+	}	
+	
+</script>
+
+</head>
+<body>
+
+</body>
+</html>

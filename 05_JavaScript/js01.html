@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자바스크립트 변수, 반복문 예제입니다</title>
+<script type="text/javascript">
+
+	// 데이터타입 var : 자료형에 유연하다
+	var su = 10;
+	var value = 24.5;
+	var hap = su+value;
+	var str = "자";
+	var str = "바스크립트"; 	// 홀따옴표, 쌍따옴표 다 됨
+	document.write("<p>" + hap + '</p>');	// 홀따옴표, 쌍따옴표 다 됨
+	document.write("<div>" + str + "</div><br/>");
+	
+	// 조건문 (if, switch) 
+	if(su > 20) {
+		document.write("<h3> 20보다 큰 수 입니다 </h3>");
+	} else if (su > 30) {
+		document.write("<h3> 30보다 큰 수 입니다</h3>");
+	} else {
+		document.write("<h3> 기타 등등입니다 </h3>");
+	}
+	document.write("<br/><br/>");
+	
+	// 반복문 (for문, while문, do~while문)
+	for(var i=0; i<10; i++) {
+		document.write("<h2>반복문입니다." + i + "</h2>");
+	}
+	document.write("<br/><br/>");
+</script>
+</head>
+<body>
+<!-- javascript는 개발자 몫이니 굉장히 잘해야한다 돔이 조금 어려운데 돔만 잘하면 어렵지 않다. 부트스트랩, nodejs등 자바스크립트가 들어간다 
+	javascript : 내장객체를 가지고있다
+-->
+	<div>
+		1. HTML : 웹 페이지를 제작하는 도구 <br/>
+		2. CSS : HTML을 표현 <br/>
+		3. JavaScript : HTML을 제어하는 기능적 역할 <br/><br/>
+		4. 자바스크립트 구성<br/>
+		4-1) 자바스크립트 CORE : 기본 문법 ( 데이터 타입, 조건, 반복문, 함수 .. )<br/>
+		4-2) 자바스크립트 BOM(Browser Object Model) : 브라우저와 관련된 객체들<br/>
+		4-3) 자바스크립트 DOM(Document Object Model) : Element 제어, Style 제어, Attribute 제어 , Event 제어<br/>
+	</div>
+	
+</body>
+</html>

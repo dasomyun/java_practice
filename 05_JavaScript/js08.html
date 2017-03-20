@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="myJs08.js"></script>
+</head>
+<body>
+	<form action="http://localhost:8081/webTesting/05_JavaScript/js01.html" method="get" onsubmit="return checkForm(this)">
+	 <!-- action : 서버경로 , onsubmit : submit 버튼누를시 유효성검사 , onsubmit의 default값은 true여서 넘어감(false로 만들어줘서 서버로 넘어가지 않게 만들어줘야함) -->
+		<label>이름을 입력하세요.</label>
+		<input type="text" name="irum" size="12"/>
+		
+		<label>이동할 사이트</label>
+		<select name="siteUrl">
+			<option></option>
+			<option value="http://www.naver.com">네이버</option>
+			<option value="http://www.daum.com">다음</option>
+			<option value="http://www.nate.com">네이트</option>
+		</select>
+		<br/><br/>
+		
+		<label>좋아하는 과일</label>
+		<input type="radio" name="fruit" value="바나나"/>
+		<label>바나나</label>
+		<input type="radio" name="fruit" value="딸기"/>
+		<label>딸기</label>
+		<input type="radio" name="fruit" value="사과"/>
+		<label>사과</label>
+		<input type="radio" name="fruit" value="파인애플"/>
+		<label>파인애플</label>
+		<input type="radio" name="fruit" value="수박"/>
+		<label>수박</label>
+		<br/><br/>
+		
+		<label>관심사를 체크하세요</label>
+		<input type="checkbox" name="interest" value="경제"/>
+		<label>경제</label>
+		<input type="checkbox" name="interest" value="IT"/>
+		<label>IT</label>
+		<input type="checkbox" name="interest" value="음악"/>
+		<label>음악</label>
+		<input type="checkbox" name="interest" value="미술"/>
+		<label>미술</label>
+		<br/><br/>
+		
+		<input type="hidden" name="realValue"/>
+		
+		<input type="submit" value="전송"/> <!-- 이벤트 onclick 포함 -->
+		<input type="reset" value="취소"/>
+
+	</form>
+</body>
+</html>

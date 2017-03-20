@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script type="text/javascript">
+// 뷰단은 뷰단에서 끝내기
+
+	function myFoc(obj) {     // obj = this = input
+		obj.value="아이디를 입력하세요";
+	}
+	
+	function myBlr(obj) {
+		obj.value="중복 아이디 입니다";
+	}
+	
+	function myChange(obj) {
+		window.alert(obj.value);
+	}
+	
+	function mySelect(obj) {
+		window.alert("선택되었습니다." + obj.value);
+	}
+	
+</script>
+</head>
+<body>
+	<input type="text" onfocus="myFoc(this)" onblur ="myBlr(this)"/>   <!-- 깜빡깜빡 거릴때가 포커스를 얻은 것, onblur : 포커스를 잃었을 때 (많이씀) -->
+	<br/><br/>
+	<select onchange="myChange(this)">
+		<option value="사과">사과</option>
+		<option value="바나나">바나나</option>
+		<option value="딸기">딸기</option>
+		<option value="메론">메론</option>
+	</select>
+	<br/><br/>
+	<input type="text" value="Hello World!" onselect="mySelect(this)"/> <!-- 블럭을 쌓으면 그 블럭싼 부분 선택 -->
+</body>
+</html>

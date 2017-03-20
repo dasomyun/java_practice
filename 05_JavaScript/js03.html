@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자바스크립트 function 예제입니다</title>
+<script type="text/javascript">
+	// javascript에서 function은 이벤트 걸어줄때 사용 
+	function sub() {
+		document.write("<h3>자바스크립트 sub함수 입니다.</h3>")
+	}
+		
+	function hap(a,b) {
+		return a+b;
+	}
+	
+	sub();
+	var result = hap(50, 10.4);
+	document.write("<h3 style='color:red'>" + result + "</h3>"); // 겉을 ""로 감싸면 안은 ''로 감싸야 하고 , 겉을 ''로 감싸면 안은 ""로 감싸야 한다 (*중요*)
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

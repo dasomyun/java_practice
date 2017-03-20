@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>자바스크립트 이벤트 예제입니다 ( 키보드 이벤트 )</title>
+<script type="text/javascript">
+	// 자바스크립트에서 함수는 무조건 복사하기
+	
+	function myFun1() {
+		window.alert("키보드를 눌렀습니다");
+	}
+	
+	function myFun2() {
+		window.alert("키보드를 눌렀다 다시 올라옴");
+	}
+	
+	function myFun3(obj) {
+		obj.style.color = "red";
+	}
+	
+</script>
+</head>
+<body>
+	<input type="text" onkeyup="myFun1()" />
+	<input type="text" onkeydown="myFun2()" />
+	<input type="text" onkeypress="myFun3(this)" />
+</body>
+</html>
