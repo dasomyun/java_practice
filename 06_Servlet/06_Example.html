@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>서버로 보낼 폼 예제입니다</title>
+</head>
+<body>
+	<form action="http://localhost:8081/webTesting/servlet/Example06" method="get">
+		<label>수</label>
+		<input type="text" name="su1"/>
+		<br/><br/>
+		
+		<label>부호</label>
+		<input type="text" name="buho"/>
+		<br/><br/>
+		
+		<label>수</label>
+		<input type="text" name="su2"/>
+		<br/><br/>
+		
+		<input type="submit" value="전송"/>
+		<input type="reset" value="취소"/>
+	</form>
+</body>
+</html>

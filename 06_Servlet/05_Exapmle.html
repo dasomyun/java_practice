@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>서버에 보낼 폼</title>
+</head>
+<body>
+	<form action="http://localhost:8081/webTesting/servlet/Example05" method="post"> <!-- 중요한 자료 : post, 256자 이내면서 별로 안중요한 자료 : get -->
+		<label>이름</label>
+		<input type="text" name="name" /> <!-- name : 식별자 -->
+		<br/><br/>
+		
+		<label>전화번호</label>
+		<input type="text" name="phone" /> 
+		<br/><br/>
+		
+		<label>주소</label>
+		<input type="text" name="addr" /> 
+		<br/><br/>
+		
+		<input type="submit" value="전송"/>
+		<input type="reset" value="취소" />
+	</form>
+</body>
+</html>

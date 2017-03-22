@@ -9,24 +9,33 @@
 	var xyz= new String("반가워요");
 	document.write("<h3>" + abc + "&nbsp;&nbsp;&nbsp;" + xyz + "</h3>");
 
-	// 특정 문자열 추출 substring()
+	// 특정 문자열 추출 : substring()
 	var str = "ABCDEFGHIJ";
 	document.write("<h3>" +str.substring(6) + "</h3>");
 	document.write("<h3>" +str.substring(2,8) +	 "</h3>");
 	
-	// 문자열의 위치 추출
+	// 문자열의 위치 추출 : indexOf()
 	var email = "dasom@naver.com";
 	var index = email.indexOf("@");
 	document.write("<h3>" + index + "</h3>");
 	
 	document.write("<h3>" + email.substring(index+1) + "</h3>");
 	
-	// 문자열 찾기
+	// 문자열 찾기 : charAt()
 	document.write("<h3>" + str.charAt(2) + "</h3>");
 	
-	// 대소문자
+	// 대소문자 : toLowerCase(), toUpperCase()
 	document.write("<h3>" + email.toLowerCase() + "</h3>");
 	document.write("<h3>" + email.toUpperCase() + "</h3>");
+	
+	// split()
+	var str="abc, def, hi";
+	var array = str.split(",");
+	
+	for(var i=0; i<array.length; i++) {
+		document.write("<h3>" +array[i] + "</h3>");
+	}
+	
 	
 </script>
 </head>

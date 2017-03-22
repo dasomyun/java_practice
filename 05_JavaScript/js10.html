@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>배열 함수</title>
+<script type="text/javascript">
+	// Number 객체
+	var su = 10;
+	var value = new Number(20);
+	
+	document.write("<h3>" + su + "&nbsp;" + value + "</h3>");
+	var num = 123.45678;
+	document.write("<h3> num : " + num.toFixed(3) + "</h3>"); 	// num : 123.457(소수 셋째자리까지 출력)
+	document.write("<h3> num : " + num.toPrecision(10) + "</h3>");	// 123.4567800
+	document.write("<h3> num : " + num.toPrecision(5) + "</h3></br></br>");	// 123.46;
+	
+	// Math 객체
+	document.write("<h3> 절대값 : " + Math.abs(-15) + "</h3>");
+	document.write("<h3> 최대값 : " + Math.max(10,15) + "</h3>");
+	document.write("<h3> 최소값 : " + Math.min(10,15) + "</h3>");
+	document.write("<h3> 누승 : " + Math.pow(2,3) + "</h3>"); // 2의 3승
+	document.write("<h3> 랜덤 : " + Math.random() + "</h3><br/><br/>");
+	
+	// Array 객체 - 데이터 추가가 가능하다
+	var strArray = ['사과','바나나','딸기']; 	// var strArray = new Array('사과', '바나나', '딸기');
+	var suArray = new Array(10, 20, 30);
+	document.write("<h3>concat :" + strArray.concat(suArray) + "</h3>");
+	document.write("<h3>join : " + strArray.join("/") + "</h3>");	
+	
+	strArray.push("메론"); // 배열 요소 추가
+	document.write("<h3> str : " + strArray + "</h3>");
+	
+	strArray.pop();	// 배열 요소 삭제
+	document.write("<h3> str : " + strArray + "</h3>");
+	
+	document.write("<h3> str : " + strArray.sort() + "</h3>");
+	document.write("<h3> str : " + strArray.reverse() + "</h3>");
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
