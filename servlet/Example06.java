@@ -19,7 +19,6 @@ public class Example06 extends HttpServlet {
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		proRequest(req, resp);
-
 	}
 	
 	protected void proRequest(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -40,34 +39,32 @@ public class Example06 extends HttpServlet {
 			iResult = isu1 / isu2;
 		}
 	
-		DecimalFormat df = null;
-		String strResult = null;
-		
-		if(buho.equals("/")) {
-			df = new DecimalFormat(".00");
-			strResult = df.format(iResult);
-		} else if(buho.equals("+") || buho.equals("-") || buho.equals("*")) {
-			df = new DecimalFormat("0");
-			strResult = df.format(iResult);
-		} else {
-			strResult = "부호를 잘못입력하셨습니다.";
-		}
+//		DecimalFormat df = null;
+//		String strResult = null;
+//		
+//		if(buho.equals("/")) {
+//			df = new DecimalFormat(".00");
+//			strResult = df.format(iResult);
+//		} else if(buho.equals("+") || buho.equals("-") || buho.equals("*")) {
+//			df = new DecimalFormat("0");
+//			strResult = df.format(iResult);
+//		} else {
+//			strResult = "부호를 잘못입력하셨습니다.";
+//		}
 		
 		resp.setContentType("text/html;charset=utf-8");
 		PrintWriter out = resp.getWriter();
 		out.print("<html>");
 		out.print("<head><title></title></head>");
 		out.print("<body>");
-		out.print("<h3> 결과값 : " + isu1 + buho + isu2 + " = " + strResult + "</h3>");
+		out.print("<h3> 결과값 : " + isu1 + buho + isu2 + " = " + Integer.toString(iResult) + "</h3>");
 		out.print("</body>");
 		out.print("</html>");
 		
 		out.close();
 		
-	}
-	
+	}	
 }
-
 
 /* 지현이쏘쓰	
 	protected void proRequest(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException 
