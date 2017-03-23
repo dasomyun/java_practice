@@ -3,9 +3,29 @@
 <head>
 <meta charset="UTF-8">
 <title>서버로 보낼 폼 예제입니다</title>
+<script type="text/javascript">
+
+	function checkForm(form) {		// 유효성 검사 ( 많이 들어간다 )
+		
+		if(form.buho.value != '+' & form.buho.value != '-' & form.buho.value != '*' & form.buho.value != '/') {
+			alert("부호를 잘못 입력하셨습니다");
+			form.buho.focus();
+			return false;
+		}
+		
+		if(form.buho.value=='/') {
+			if(form.su2.value==0) {
+				alert("0 으로는 나눌 수 없습니다.");
+				form.su2.focus();
+				return false;
+			}
+		}
+	}
+
+</script>
 </head>
 <body>
-	<form action="http://localhost:8081/webTesting/servlet/Example06" method="get">
+	<form action="http://localhost:8081/webTesting/servlet/Example06" method="get" onsubmit="return checkForm(this)">
 		<label>수</label>
 		<input type="text" name="su1"/>
 		<br/><br/>
